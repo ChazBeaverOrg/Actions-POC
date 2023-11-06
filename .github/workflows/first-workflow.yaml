@@ -9,6 +9,6 @@ jobs:
         run: echo "Hello World"
       - name: Multiline Command
         run: |
-        node -v
-        lsb_release -a
-        date
+          node -v
+          lsb_release -a
+          date

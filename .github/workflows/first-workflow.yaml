@@ -12,3 +12,16 @@ jobs:
           node -v
           lsb_release -a
           date
+  parallel-job-macos:
+    runs-on: macos-latest
+    steps:
+      - name: View SW Version
+        run: sw_vers
+  dependant-job:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: Powershell Version
+        run: "$PSVersionTable"
+      - name: error command
+        run: doesnotexist

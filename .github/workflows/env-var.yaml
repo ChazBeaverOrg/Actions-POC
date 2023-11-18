@@ -1,4 +1,4 @@
-name: Environment Variables
+name: Environment Variables TEST-NAMECHANGE
 on: [push]
 
 env:
